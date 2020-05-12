@@ -31059,8 +31059,8 @@
     "fin = open('mybook.txt', encoding=\"utf-8\")# opened the downloaded textbook in 8 bit format\n",
     "for line in fin:\n",
     "    for word in line.split():\n",
-    "        word = word.strip(specialCharacters)\n",
-    "        word = word.lower()\n",
+    "        word = word.strip(specialCharacters)#removing the special charcters of the words \n",
+    "        word = word.lower()#converting the words into lower case \n",
     "        print(word)"
    ]
   },
@@ -31086,17 +31086,12 @@
     "    for word in line.split():\n",
     "        word = word.strip(specialCharacters)\n",
     "        word = word.lower()\n",
-    "        if word not in dict:\n",
+    "        if word not in dict: # condition for adding the words list into dictionary.\n",
     "            dict[word] = 1\n",
     "        else:\n",
     "            dict[word] = dict[word] + 1\n",
-    "print('total number of words' + str(sum(dict.values())))\n",
-    "print('number of times each word is used' + str(dict))\n",
-    "sortedValues = sorted(dict, key=dict.get, reverse=True)[:20]\n",
-    "print('20 most frequent words used in the book')\n",
-    "for i in sortedValues:\n",
-    "    print(i, dict[i])\n",
-    "print('number of different words in book', + len(dict))\n"
+    "print('total number of words') \n",
+    "print(str(sum(dict.values()))) # printing the count of words by adding the values of words."
    ]
   },
   {
