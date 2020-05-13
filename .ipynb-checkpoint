@@ -31190,7 +31190,13 @@
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#Home Work _Q1 Modify the previous program to read a word list and then print all the words in the book that are not in the word list. \n",
+    "#How many of them are typos? \n",
+    "#How many of them are common words that should be in the word list, and how many of them are obscure?\n",
+    "#Python provides a data structure called set that provides many common set operations. \n",
+    "#Read the documentation and write a program that uses set subtraction to find words in the book that are not in the word list."
+   ]
   },
   {
    "cell_type": "code",
